@@ -34,10 +34,10 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] sizes = {100,101,104,120,180,200,250,350,400,423,455,480,500,1000,5000,10000,50000}; // Tamanhos dos arrays a serem testados
+        int[] sizes = {100,101,104,120,180,200,250,350,400,423,455,480,500,1000,5000,10000,50000};
         
         for (int size : sizes) {
-            int[] arrayToSort = generateRandomArray(size); // Gera um array de tamanho 'size'
+            int[] arrayToSort = generateRandomArray(size);
             BubbleSort bubble = new BubbleSort();
             bubble.ordenar(arrayToSort);
             
@@ -50,7 +50,7 @@ public class BubbleSort {
     public static int[] generateRandomArray(int size) {
         int[] array = new int[size];
         for (int i = 0; i < size; i++) {
-            array[i] = (int) (Math.random() * 1000); // Preenche o array com valores aleatórios
+            array[i] = (int) (Math.random() * 1000);
         }
         return array;
     }
